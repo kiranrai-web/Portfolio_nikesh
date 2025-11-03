@@ -1,0 +1,52 @@
+.section__padding{
+  padding: 4rem 6rem;
+}
+
+.flex__center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100%;
+    padding: 1rem 5rem;
+}
+
+.p__roboto{
+  font-family: var(--font-base);
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.line__margin{
+  margin: 2rem 0rem;
+}
+
+.custom__button {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-base);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.custom__button:hover{
+  background: var(--color-primary-hover);
+}

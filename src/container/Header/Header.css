@@ -1,0 +1,163 @@
+.app__wrapper-img{
+    width: 50%;
+}
+
+.app__wrapper-img img{
+    width: 100%;
+}
+
+.app__wrapper-info{
+    width: 50%;
+}
+
+.app__wrapper-intro{
+    font-weight: 500;
+    font-size: 17px;
+    font-style: italic;
+    margin-bottom: .5rem;
+}
+
+.app__wrapper-subtitle{
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--color-primary);
+}
+
+.app__wrapper-info h1{
+    font-size: 90px;
+    font-weight: 800;
+    margin: 3rem 2rem;
+}
+
+.app__wrapper-info p{
+    width: 90%;
+    color: var(--color-gray);
+}
+
+.app__wrapper button{
+    margin: 2rem 0;
+}
+
+.booking-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* Align to top */
+  animation: fadeIn 0.3s ease-out;
+    pointer-events: all; /* Enable interaction for the overlay */
+  z-index: 1000; 
+}
+
+.booking-form-popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+    height: 80vh;  /* Restrict max height */
+  max-height: 600px;  /* Restrict max height */
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideInFromTop 0.5s ease-out;
+    overflow-y: auto;  /* Allow scrolling inside the form */
+  z-index: 1001; /* Ensure form is above overlay */
+}
+
+/* Close button */
+.close-form {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.close-form:hover {
+  background-color: #d32f2f;
+}
+
+body.booking-form-visible {
+  pointer-events: none;
+}
+
+/* Animation for the overlay fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Animation for the form sliding in from the top */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1325px){
+    .app__wrapper{
+        padding: 1rem 3rem;
+    }
+
+    .app__wrapper-info h1{
+        font-size: 70px;
+        font-weight: 800;
+        margin: 2rem 1rem;
+    }
+
+    .app__wrapper-img img{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .app__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100%;
+        padding: 1rem 2rem;
+    }
+
+    .app__wrapper-img{
+        width: 50%;
+        order: 1;
+    }
+
+    .app__wrapper-img img{
+        width: 100%;
+    }
+
+    .app__wrapper-info{
+        width: 90%;
+        order: 2;
+    }
+
+    .app__wrapper-info h1{
+        font-size: 50px;
+        font-weight: 800;
+        margin: 1rem 1rem;
+        line-height:4rem;
+    }
+
+    .app__wrapper-info p{
+    width: 100%;
+    color: var(--color-gray);
+}
+}

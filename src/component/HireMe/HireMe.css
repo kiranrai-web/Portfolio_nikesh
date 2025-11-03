@@ -1,0 +1,137 @@
+/* HireMe.css */
+.app__hire-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 2rem;
+  background: var(--color-bg, #f9f9f9);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.app__hire-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+.app__hire-form-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  letter-spacing: 0.5px;
+}
+
+.app__hire-form-subtext {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.app__hire-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.app__hire-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__hire-form-group label {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.app__hire-form-group input,
+.app__hire-form-group textarea,
+.app__hire-form-group select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app__hire-form-group input:focus,
+.app__hire-form-group textarea:focus,
+.app__hire-form-group select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+  outline: none;
+}
+
+.app__hire-form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.app__hire-form-group input::placeholder,
+.app__hire-form-group textarea::placeholder {
+  color: #999;
+}
+
+.app__hire-form-submit {
+  padding: 14px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.app__hire-form-submit:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+}
+
+.app__hire-form-submit:active {
+  transform: translateY(1px);
+}
+
+/* Error state */
+.error {
+  border-color: red;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .app__hire-form {
+    padding: 1.5rem;
+    margin: 30px 1rem;
+  }
+
+  .app__hire-form-heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .app__hire-form {
+    padding: .5rem;
+    margin: 20px .5rem;
+    width: 95%;
+    margin: 45px 2px;
+  }
+
+  .app__hire-form-heading {
+    font-size: 1.5rem;
+  }
+}

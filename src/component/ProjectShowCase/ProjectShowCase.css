@@ -1,0 +1,203 @@
+.container {
+  height: 100%;
+  padding: 00px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.showAllButton {
+  padding: 15px 35px;
+  border-radius: 15px;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.showAllButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+
+.filterButton {
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.filterButton:hover {
+  transform: translateY(-2px);
+}
+
+.activeButton {
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.inactiveButton {
+  background-color: white;
+  color: #333;
+  border: 1px solid #e0e0e0;
+}
+
+.inactiveButton:hover {
+  background-color: #f9f9f9;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(280px, 320px)); */
+  justify-content: center;
+  gap: 40px;
+  padding: 0 1rem;
+}
+
+
+.projectCard {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.imageContainer {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #ffe5d9 0%, #e0f0ff 100%);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 200px; /* or any fixed height */
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* important! */
+  display: block;
+}
+
+
+.projectCard:hover .image {
+  transform: scale(1.1);
+}
+
+.cardContent {
+  padding: 24px;
+}
+
+.category {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.projectCard:hover .title {
+  color: var(--color-primary-hover);
+}
+
+.emptyState {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.emptyTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.emptyText {
+  color: #888;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 15px;
+  }
+  
+  .filterContainer {
+    gap: 8px;
+  }
+  
+  .filterButton {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+  
+  .imageContainer {
+    height: 250px;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width:850px){
+    .projectsGrid {
+  grid-template-columns: 1fr 1fr;
+}
+
+}
+
+@media screen and (max-width:530px){
+    .projectsGrid {
+  grid-template-columns: 1fr;
+}
+
+}
