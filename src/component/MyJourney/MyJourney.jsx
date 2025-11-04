@@ -8,7 +8,7 @@ export default function MyJourney() {
       year: "Aug 2024 – Nov 2025",
       title: "Video Editor | TNC",
       description:
-        "During my internship, I edited videos, handling narrative, sound, motion graphics, music, and color grading.",
+        "I edited videos, handling narrative, sound, motion graphics, music, and color grading.",
     },
     {
       year: "Nov 2024 – Jul 2025",

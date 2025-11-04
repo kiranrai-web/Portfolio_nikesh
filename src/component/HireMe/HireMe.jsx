@@ -7,7 +7,6 @@ const HireMe = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
-  const [service, setService] = useState('');
   const [deadline, setDeadline] = useState('');
   const [budget, setBudget] = useState('');
   const [message, setMessage] = useState('');
@@ -15,14 +14,6 @@ const HireMe = () => {
   const [errors, setErrors] = useState({});
   const [alertMessage, setAlertMessage] = useState('');
   const [isFormVisible, setIsFormVisible] = useState(true);
-
-  const services = [
-    'Video Editing',
-    'Color Grading',
-    'Short-form Reels / TikTok Editing',
-    'YouTube Video Editing',
-    'Commercial / Brand Ad',
-  ];
 
   const budgets = ['Below $100', '$100 - $300', '$300 - $500', '$500+'];
 
@@ -38,7 +29,6 @@ const HireMe = () => {
       if (phoneDigits.length < 10 || phoneDigits.length > 15)
         newErrors.phone = 'Phone must be 10–15 digits';
     }
-    if (!service) newErrors.service = 'Select a project type';
     if (!budget) newErrors.budget = 'Select a budget range';
 
     setErrors(newErrors);
@@ -52,18 +42,16 @@ const HireMe = () => {
       return;
     }
 
-    // Prepare data
     const templateParams = {
       name,
       email,
       phone,
-      service,
       deadline,
       budget,
       message,
     };
 
-    // Send project details to nikesh
+    // Send project details to Nikesh
     emailjs
       .send('service_v422v2p', 'template_lrxkhqo', templateParams, 'Y5g94hvnv-2wL4DuW')
       .then(
@@ -78,22 +66,17 @@ const HireMe = () => {
         }
       );
 
-       // 2️⃣ Send thank-you email to client
-  emailjs
-    .send('service_v422v2p', 'template_8y3mzgg',
-    templateParams, 'Y5g94hvnv-2wL4DuW')
-    .then(
-      (response) => {
-        console.log('Thank-you email sent to client', response.status);
-        setAlertMessage('✅ Message sent successfully! Check your inbox for confirmation.');
-        setTimeout(() => setIsFormVisible(false), 1000);
-      },
-      (error) => {
-        console.error('Failed to send thank-you email', error);
-        setAlertMessage('❌ Failed to send confirmation email. Please try again.');
-      }
-    );
-
+    // Send thank-you email to client
+    emailjs
+      .send('service_v422v2p', 'template_8y3mzgg', templateParams, 'Y5g94hvnv-2wL4DuW')
+      .then(
+        (response) => {
+          console.log('Thank-you email sent to client', response.status);
+        },
+        (error) => {
+          console.error('Failed to send thank-you email', error);
+        }
+      );
   };
 
   const handlePhoneChange = (e) => {
@@ -161,23 +144,6 @@ const HireMe = () => {
               className={errors.phone ? 'error' : ''}
             />
             {errors.phone && <small className="error-text">{errors.phone}</small>}
-          </div>
-
-          {/* Service */}
-          <div className="app__hire-form-group">
-            <label htmlFor="service">Type of Project</label>
-            <select
-              id="service"
-              value={service}
-              onChange={(e) => setService(e.target.value)}
-              className={errors.service ? 'error' : ''}
-            >
-              <option value="">-- Select Project Type --</option>
-              {services.map((option, i) => (
-                <option key={i} value={option}>{option}</option>
-              ))}
-            </select>
-            {errors.service && <small className="error-text">{errors.service}</small>}
           </div>
 
           {/* Deadline */}
