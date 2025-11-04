@@ -37,7 +37,7 @@ const ReviewSlider = () => {
       id: 2,
       text: "Nikesh has been part of the core editing team at TNC Unscripted, consistently delivering high-quality short and long-form content",
       name: "TNC Unscripted",
-      position: "Media",
+      position: "Youtube Channel",
       image: images.tnc
     },
     {
