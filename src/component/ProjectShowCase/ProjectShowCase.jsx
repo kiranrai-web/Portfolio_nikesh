@@ -4,7 +4,7 @@ import { projects } from "../../constants/projects"; // import your projects arr
 import "./ProjectShowCase.css";
 
 const ProjectShowcase = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Featured Videos");
   const [showAll, setShowAll] = useState(false);
 
   const categories = [
