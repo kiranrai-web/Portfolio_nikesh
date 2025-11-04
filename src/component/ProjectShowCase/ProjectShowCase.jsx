@@ -1,41 +1,48 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { projects } from "../../constants/projects"; // import your projects array
+import { projects } from "../../constants/projects";
 import "./ProjectShowCase.css";
 
 const ProjectShowcase = () => {
   const [activeFilter, setActiveFilter] = useState("Featured Videos");
   const [showAll, setShowAll] = useState(false);
 
-  const categories = [
-    "Featured Videos",
-    "Short-form Videos",
-    "Long-form Videos",
-    "Reels",
-  ];
+  const categories = ["Featured Videos", "Short-form Videos", "Long-form Videos", "Reels"];
 
+  // Filter projects by category
   const filteredProjects =
     activeFilter === "Featured Videos"
       ? projects
       : projects.filter((p) => p.category.includes(activeFilter));
 
-  const visibleProjects = showAll ? filteredProjects : filteredProjects.slice(0, 3); // show 3 videos by default
+  // Reverse order so latest project shows first
+  const reversedProjects = [...filteredProjects].sort((a, b) => b.id - a.id);
+
+  // Show only 3 by default or all if "Show All" is clicked
+  const visibleProjects = showAll ? reversedProjects : reversedProjects.slice(0, 3);
 
   return (
     <div className="container">
       <div className="wrapper">
+        {/* Category Filter Buttons */}
         <div className="filterContainer">
           {categories.map((category) => (
             <button
               key={category}
-              onClick={() => { setActiveFilter(category); setShowAll(false); }}
-              className={`filterButton ${activeFilter === category ? "activeButton" : "inactiveButton"}`}
+              onClick={() => {
+                setActiveFilter(category);
+                setShowAll(false);
+              }}
+              className={`filterButton ${
+                activeFilter === category ? "activeButton" : "inactiveButton"
+              }`}
             >
               {category}
             </button>
           ))}
         </div>
 
+        {/* Projects Grid */}
         <div className="projectsGrid">
           <AnimatePresence>
             {visibleProjects.map((project) => (
@@ -49,11 +56,7 @@ const ProjectShowcase = () => {
                 transition={{ type: "spring", stiffness: 200, damping: 20 }}
               >
                 <div className="imageContainer">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
                     <img
                       src={project.thumbnail || "https://via.placeholder.com/600x400?text=Video"}
                       alt={project.title || "Video"}
@@ -70,6 +73,7 @@ const ProjectShowcase = () => {
           </AnimatePresence>
         </div>
 
+        {/* Show All / Show Less Button */}
         {filteredProjects.length > 3 && (
           <div style={{ textAlign: "center", marginTop: "40px" }}>
             <button className="showAllButton" onClick={() => setShowAll((prev) => !prev)}>
