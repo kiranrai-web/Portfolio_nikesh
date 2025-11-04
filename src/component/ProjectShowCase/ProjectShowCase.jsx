@@ -8,16 +8,14 @@ const ProjectShowcase = () => {
   const [showAll, setShowAll] = useState(false);
 
   const categories = [
-    "All",
+    "Featured Videos",
     "Short-form Videos",
     "Long-form Videos",
-    "Educational Videos",
-    "Promotional Videos",
     "Reels",
   ];
 
   const filteredProjects =
-    activeFilter === "All"
+    activeFilter === "Featured Videos"
       ? projects
       : projects.filter((p) => p.category.includes(activeFilter));
 

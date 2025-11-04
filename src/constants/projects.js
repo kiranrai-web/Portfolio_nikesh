@@ -6,21 +6,21 @@ export const projects = [
     id: 1,
     link: "https://youtube.com/shorts/vwrW6eowOew?si=8lJvIDEa0yf5wf-1",
     thumbnail: "https://img.youtube.com/vi/vwrW6eowOew/hqdefault.jpg",
-    category: ["Short-form Videos", "Educational Videos"],
+    category: ["Short-form Videos"],
     title: "Nepal Tibet War Explained"
   },
   {
     id: 2,
     link: "https://youtube.com/shorts/eRkFZY2VH9g?si=PkhAXSIn0Hpiowyq",
     thumbnail: "https://img.youtube.com/vi/eRkFZY2VH9g/hqdefault.jpg",
-    category: ["Short-form Videos", "Educational Videos"],
+    category: ["Short-form Videos"],
     title: "Why Nepal flag was Changed 4 times"
   },
   {
     id: 3,
     link: "https://youtube.com/shorts/soQ4UEoXzic?si=Q5ji2Ly-wIz2DYCV",
     thumbnail: "https://img.youtube.com/vi/soQ4UEoXzic/hqdefault.jpg",
-    category: ["Short-form Videos", "Educational Videos"],
+    category: ["Short-form Videos"],
     title: "When Prachanda created fake moaist"
   },
   {
@@ -34,7 +34,7 @@ export const projects = [
     id: 5,
     link: "https://youtube.com/shorts/Vm2xLap83mE?si=rdqahqOJNYXj9sxf",
     thumbnail: "https://img.youtube.com/vi/Vm2xLap83mE/hqdefault.jpg",
-    category: ["Short-form Videos", "Educational Videos"],
+    category: ["Short-form Videos"],
     title: "Why did USSR veto Nepal’s UN bid?"
   },
   {
@@ -55,7 +55,7 @@ export const projects = [
     id: 8,
     link: "https://youtube.com/shorts/ols-sZ4bIOs?si=-LeGpTiw_tfW8uhv",
     thumbnail: "https://img.youtube.com/vi/ols-sZ4bIOs/hqdefault.jpg",
-    category: ["Short-form Videos", "Educational Videos"],
+    category: ["Short-form Videos"],
     title: "How Real state mafia work in nepal"
   },
   {
@@ -69,7 +69,7 @@ export const projects = [
     id: 10,
     link: "https://youtube.com/shorts/UEzsXGxNW-w?si=AuM6SuyuYeFy7csn",
     thumbnail: "https://img.youtube.com/vi/UEzsXGxNW-w/hqdefault.jpg",
-    category: ["Short-form Videos","Educational Videos"],
+    category: ["Short-form Videos"],
     title: "The Origin of NRs 1000"
   },
 
@@ -122,13 +122,13 @@ export const projects = [
     id: 17,
     link: "https://www.instagram.com/reel/DPnhLfZkdyl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     thumbnail: images.reel1,
-    category: ["Reels", "Promotional Videos"],
+    category: ["Reels"],
   },
   {
     id: 18,
     link: "https://www.instagram.com/reel/DPAvoCeD3Oo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     thumbnail: images.reel2,
-    category: ["Reels", "Promotional Videos"],
+    category: ["Reels"],
   },
   {
     id: 19,
@@ -140,7 +140,7 @@ export const projects = [
     id: 20,
     link: "https://www.instagram.com/reel/DO5GoACjyZ4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     thumbnail: images.reel4,
-    category: ["Reels", "Promotional Videos"],
+    category: ["Reels"],
   },
   {
     id: 21,
@@ -152,6 +152,6 @@ export const projects = [
     id: 22,
     link: "https://www.instagram.com/reel/DOKu3s_D4xw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     thumbnail: images.reel6,
-    category: ["Reels", "Promotional Videos"],
+    category: ["Reels"],
   },
 ];

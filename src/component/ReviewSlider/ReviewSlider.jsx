@@ -28,21 +28,21 @@ const ReviewSlider = () => {
   const reviews = [
     {
       id: 1,
-      text: "Very easy to work with, consistently delivers high-quality results, and maintains amazing turnaround time with clear communication and professionalism throughout.",
+      text: "Very easy to work with. Turnover time is amazing.",
       name: "8848 Momo House",
       position: "Business",
       image: images.momo
     },
     {
       id: 2,
-      text: "Extremely professional and creative, always delivers on time with impressive attention to detail, smooth communication, and results that exceed expectations.",
+      text: "Nikesh has been part of the core editing team at TNC Unscripted, consistently delivering high-quality short and long-form content",
       name: "TNC Unscripted",
       position: "Media",
       image: images.tnc
     },
     {
       id: 3,
-      text: "Remarkably talented and efficient, communicates clearly, meets every deadline, and consistently transforms ideas into engaging, high-quality video content that stands out.",
+      text: "Created engaging shorts for The Nepali Comment, incorporating smooth transitions, text animations, captions, and effects to enhance viewer experience.",
       name: "TNC",
       position: "Media",
       image: images.tnc2

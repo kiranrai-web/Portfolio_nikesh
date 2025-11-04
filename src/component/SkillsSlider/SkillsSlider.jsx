@@ -4,11 +4,10 @@ import "./SkillsSlider.css"
 
 export default function SkillsProgress() {
   const skills = [
-    { name: " Adobe After Effects & Adobe Premiere Pro", percentage: 90 },
-    { name: "Narrative Editing & Storytelling", percentage: 80 },
-    { name: "Sound Design & Background Music Integration", percentage: 75 },
-    { name: "Color Grading", percentage: 60 },
-    { name: "2D Animation & Motion Graphics", percentage: 70 }
+    { name: " Motion Graphics (After Effects)", percentage: 80 },
+    { name: "Color Grading & Correction", percentage: 75 },
+    { name: "Transitions & Visual Effects", percentage: 85 },
+    { name: "Social Media Content Editing", percentage: 90 }
   ];
 
   return (

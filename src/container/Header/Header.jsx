@@ -34,10 +34,7 @@ const Header = () => {
         <h2 className="app__wrapper-subtitle">Nikesh Thapa</h2>
         <h1>Video Editor</h1>
         <p>
-          Passionate about storytelling through video, I have more than 1 years
-          of experience in editing and creating engaging content for brands,
-          social media, and personal projects. I specialize in turning ideas
-          into visually compelling stories.
+Passionate about storytelling through visuals, I’ve spent over a year in the professional field editing and crafting engaging content for brands, social media, and personal projects. I specialize in transforming raw footage into visually compelling stories that connect with viewers and make every second count.
         </p>
         <button className="custom__button" onClick={handleOpenForm}>Hire me</button>
       </div>

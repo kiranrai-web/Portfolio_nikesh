@@ -9,16 +9,22 @@ const AboutMe = () => {
         <MyJourney />
       </div>
       <div className="AboutMe__right">
-        <h1>About Me</h1>
+        <h1>How do I edit videos?</h1>
         <p>
-          I am passionate about producing high-quality video content that is
-          visually stunning and emotionally engaging, focusing on storytelling
-          that deeply connects with viewers.
+          I see video editing as more than just cutting clips. It’s about
+          understanding emotion, rhythm, and purpose. My approach blends
+          creativity with structure, ensuring each frame adds meaning to the
+          story.
         </p>
         <p>
-          I have experience editing short-form and long-form content for a
-          variety of clients, delivering polished, engaging videos tailored to
-          diverse audiences and their unique needs.
+          I enjoy working on both short-form and long-form projects,
+          experimenting with motion graphics, pacing, and sound design to create
+          edits that feel alive and dynamic.
+        </p>
+        <p>
+          When I’m not editing, I’m usually exploring new storytelling styles,
+          learning visual trends, or finding ways to make everyday moments
+          cinematic.
         </p>
         <SkillsSlider />
       </div>
