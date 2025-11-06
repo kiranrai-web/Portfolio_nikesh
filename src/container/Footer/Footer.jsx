@@ -18,11 +18,11 @@ const Footer = () => (
         </div>
         <div className="app__footer-phone app__footer-info_logo">
           <FaPhone />
-          <p className="p__opensans">0421718952</p>
+          <p className="p__opensans">+61 421718952</p>
         </div>
         <div className="app__footer-whatsapp app__footer-info_logo">
           <IoLogoWhatsapp />
-          <p className="p__opensans">0421718952</p>
+          <p className="p__opensans">+61 421718952</p>
         </div>
         <div className="app__footer-gmail app__footer-info_logo">
           <MdEmail />
