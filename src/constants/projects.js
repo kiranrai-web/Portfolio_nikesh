@@ -315,4 +315,12 @@ export const projects = [
     thumbnail: images.reel6,
     category: ["Reels"],
   },
+
+  //my personal work
+  {
+    id: 45,
+    link: "https://drive.google.com/file/d/1wEAlux6r3IUIJEpMRSrwQlapAOiDCSh8/view?usp=drive_link",
+    thumbnail: images.reel6,
+    category: ["My Personal Creations"],
+  },
 ];

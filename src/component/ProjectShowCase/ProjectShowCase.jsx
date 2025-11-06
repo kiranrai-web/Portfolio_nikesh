@@ -7,7 +7,7 @@ const ProjectShowcase = () => {
   const [activeFilter, setActiveFilter] = useState("Featured Videos");
   const [showAll, setShowAll] = useState(false);
 
-  const categories = ["Featured Videos", "Short-form Videos", "Long-form Videos", "Reels"];
+  const categories = ["Featured Videos", "Short-form Videos", "Long-form Videos", "Reels","My Personal Creations"];
 
   // Filter projects by category
   const filteredProjects =

@@ -23,7 +23,7 @@ export default function MyJourney() {
         "Edited social media videos with B-rolls, text, captions, transitions, and consistent storytelling.",
     },
     {
-      year: " 2025 – Present",
+      year: " 2024 – Present",
       title: "Freelance Video Editor",
       description:
         "Created videos with animations, sound, and color grading, tailored to client brand and audience.",

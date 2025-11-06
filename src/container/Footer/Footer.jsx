@@ -33,8 +33,7 @@ const Footer = () => (
       <div className="app__footer-links_logo">
         <img src={images.logo} alt="footer_logo" />
         <p className="p__opensans">
-          &quot;The best way to find yourself is to lose yourself in the service
-          of others.&quot;
+          &quot;Excited to learn and work with you! Looking forward to what we can create together.&quot;
         </p>
         <div className="app__footer-links_icons">
           <a
@@ -73,7 +72,7 @@ const Footer = () => (
 
     <div className="footer__copyright">
       <p className="p__opensans">
-        © 2025 Nikesh Studio — Designed & Built by Kiran Rai.
+        © 2025 Nikesh Thapa — Designed & Built by Kiran Rai.
       </p>
     </div>
   </div>
