@@ -72,7 +72,7 @@ const Footer = () => (
 
     <div className="footer__copyright">
       <p className="p__opensans">
-        © 2025 Nikesh Thapa — Designed & Built by Kiran Rai.
+        © 2025 Nikesh Thapa. Built with coffee & code by Kiran Rai. Don’t blame us for bugs!
       </p>
     </div>
   </div>
