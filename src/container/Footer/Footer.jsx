@@ -36,13 +36,13 @@ const Footer = () => (
           &quot;Excited to learn and work with you! Looking forward to what we can create together.&quot;
         </p>
         <div className="app__footer-links_icons">
-          <a
+          {/* <a
             href="https://www.facebook.com/nikeshthapa150"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FiFacebook color="#3B82F6" fontSize={27} />
-          </a>
+          </a> */}
 
           <a
             href="https://www.instagram.com/nikeshthapa150/?utm_source=ig_web_button_share_sheet"
