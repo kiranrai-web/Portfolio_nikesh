@@ -3,7 +3,7 @@ import images from './image'
 export const projects = [
   // YouTube Shorts
   {
-    id: 10,
+    id: 5,
     link: "https://youtube.com/shorts/9jxufCZXBas?si=UshVU_QZcJL9He_v",
     thumbnail: "https://img.youtube.com/vi/9jxufCZXBas/hqdefault.jpg",
     category: ["Short-form Videos"],
@@ -38,11 +38,11 @@ export const projects = [
     title: "Thousand die in road accident every year in nepal"
   },
   {
-    id: 5,
+    id: 10,
     link: "https://youtube.com/shorts/UEzsXGxNW-w?si=AuM6SuyuYeFy7csn",
     thumbnail: "https://img.youtube.com/vi/UEzsXGxNW-w/hqdefault.jpg",
     category: ["Short-form Videos"],
-    title: "Origin of Nrs 100"
+    title: "Origin of Nrs 1000"
   },
   {
     id: 4,
@@ -132,8 +132,8 @@ export const projects = [
 },
 {
   id: 29,
-  link: "https://youtu.be/wrpjevtejls?si=fJ_3pMjDDSqtj0hs",
-  thumbnail: "https://img.youtube.com/vi/wrpjevtejls/hqdefault.jpg",
+  link: "https://youtu.be/reJ84HHz9jA?si=aFO3ZR6Hjr49I2jQ",
+  thumbnail: "https://img.youtube.com/vi/reJ84HHz9jA/hqdefault.jpg",
   category: ["Long-form Videos"],
   title: "Is Renu Dahal The Best Mayor of Nepal"
 },
@@ -322,30 +322,35 @@ export const projects = [
     id: 14,
     link: "https://drive.google.com/file/d/1wEAlux6r3IUIJEpMRSrwQlapAOiDCSh8/view?usp=sharing",
     thumbnail: "https://drive.google.com/thumbnail?id=1eIiZt3nzWGsAFLhyMFcFMgGKgSo1a1_4",
-    category: ["My Personal Creations"]
+    category: ["My Personal Creations"],
+    title: "Sky replacement and color correction"
   },
   {
     id: 15,
     link: "https://drive.google.com/file/d/1ycLgKlImsjpiumezEmLdhkgpQz47QATF/view?usp=sharing",
     thumbnail: "https://drive.google.com/thumbnail?id=1Nw56s3g-Ruy3SunIxDu5mN6PrQBPGYrU",
-    category: ["My Personal Creations"]
+    category: ["My Personal Creations"],
+    title: "Color correction and time remap"
   },
   {
     id: 16,
     link: "https://drive.google.com/file/d/1sZW-5I_sJSbjAVCcLlQDQgNgMLo3LikK/view?usp=sharing",
     thumbnail: "https://drive.google.com/thumbnail?id=1sZW-5I_sJSbjAVCcLlQDQgNgMLo3LikK",
-    category: ["My Personal Creations"]
+    category: ["My Personal Creations"],
+    title: "Sample Edit"
   },
   {
     id: 17,
     link: "https://drive.google.com/file/d/1Nw56s3g-Ruy3SunIxDu5mN6PrQBPGYrU/view?usp=sharing",
     thumbnail: "https://drive.google.com/thumbnail?id=1ycLgKlImsjpiumezEmLdhkgpQz47QATF",
-    category: ["My Personal Creations"]
+    category: ["My Personal Creations"],
+    title: "Tiktok trend"
   },
   {
     id: 18,
     link: "https://drive.google.com/file/d/1eIiZt3nzWGsAFLhyMFcFMgGKgSo1a1_4/view?usp=sharing",
     thumbnail: "https://drive.google.com/thumbnail?id=1wEAlux6r3IUIJEpMRSrwQlapAOiDCSh8",
-    category: ["My Personal Creations"]
+    category: ["My Personal Creations"],
+    title: "Bouddha Edit"
   }
 ];
