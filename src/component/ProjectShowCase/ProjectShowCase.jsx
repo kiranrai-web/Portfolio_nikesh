@@ -7,12 +7,18 @@ const ProjectShowcase = () => {
   const [activeFilter, setActiveFilter] = useState("Featured Videos");
   const [showAll, setShowAll] = useState(false);
 
-  const categories = ["Featured Videos", "Short-form Videos", "Long-form Videos", "Reels","My Personal Creations"];
+  const categories = [
+    "Featured Videos",
+    "Short-form Videos",
+    "Long-form Videos",
+    "Reels",
+    "My Personal Creations",
+  ];
 
   // Filter projects by category
   const filteredProjects =
     activeFilter === "Featured Videos"
-      ? projects
+      ? projects.filter((p) => p.category.includes("Featured Videos"))
       : projects.filter((p) => p.category.includes(activeFilter));
 
   // Reverse order so latest project shows first

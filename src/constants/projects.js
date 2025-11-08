@@ -280,38 +280,38 @@ export const projects = [
  
   // Instagram Reels (placeholder thumbnails)
 
-  // {
-  //   id: 17,
-  //   link: "https://www.instagram.com/reel/DPnhLfZkdyl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  //   thumbnail: images.reel1,
-  //   category: ["Reels"],
-  // },
   {
-    id: 11,
+    id: 13,
+    link: "https://www.instagram.com/reel/DPnhLfZkdyl/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    thumbnail: images.reel1,
+    category: ["Reels"],
+  },
+  {
+    id: 44,
     link: "https://www.instagram.com/reel/DPAvoCeD3Oo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     thumbnail: images.reel2,
     category: ["Reels"],
   },
-  // {
-  //   id: 19,
-  //   link: "https://www.instagram.com/reel/DO879kbDcEL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  //   thumbnail: images.reel3,
-  //   category: ["Reels"],
-  // },
-  // {
-  //   id: 20,
-  //   link: "https://www.instagram.com/reel/DO5GoACjyZ4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-  //   thumbnail: images.reel4,
-  //   category: ["Reels"],
-  // },
   {
-    id: 13,
+    id: 12,
+    link: "https://www.instagram.com/reel/DO879kbDcEL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    thumbnail: images.reel3,
+    category: ["Reels"],
+  },
+  {
+    id: 11,
+    link: "https://www.instagram.com/reel/DO5GoACjyZ4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    thumbnail: images.reel4,
+    category: ["Reels"],
+  },
+  {
+    id:42,
     link: "https://www.instagram.com/reel/DONTH8DEy92/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     thumbnail: images.reel5,
     category: ["Reels"],
   },
   {
-    id: 12,
+    id: 43,
     link: "https://www.instagram.com/reel/DOKu3s_D4xw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     thumbnail: images.reel6,
     category: ["Reels"],
@@ -352,5 +352,50 @@ export const projects = [
     thumbnail: "https://drive.google.com/thumbnail?id=1wEAlux6r3IUIJEpMRSrwQlapAOiDCSh8",
     category: ["My Personal Creations"],
     title: "Bouddha Edit"
-  }
+  },
+
+//feaatured project
+  {
+    id: 41,
+    link: "https://youtu.be/sH6UOKtkLVw?si=4aM64tYmpzpwnSjW",
+    thumbnail: "https://img.youtube.com/vi/sH6UOKtkLVw/hqdefault.jpg",
+    category: ["Featured Videos"],
+    title: "I investigated Kathmandu’s Dying Water System"
+  },
+    {
+    id: 40,
+    link: "https://youtu.be/sMx0HBlu9hI?si=7IcL5zb4kFUB4i5i",
+    thumbnail: "https://img.youtube.com/vi/sMx0HBlu9hI/hqdefault.jpg",
+    category: ["Featured Videos"],
+    title: "I Investigated Why We HATE Public Transport So Much"
+  },
+    {
+    id: 39,
+    link: "https://youtu.be/naDSZLhLTlI?si=LOW77WmQ_caiOAef",
+    thumbnail: "https://img.youtube.com/vi/naDSZLhLTlI/hqdefault.jpg",
+    category: ["Featured Videos"],
+    title: "What You Need to Know About Cancer"
+  },
+    {
+    id: 38,
+    link: "https://youtube.com/shorts/rw35I8XQ_ts?si=vBObPBMGxThr0gUe",
+    thumbnail: "https://img.youtube.com/vi/rw35I8XQ_ts/hqdefault.jpg",
+    category: ["Featured Videos"],
+    title: "Who is Bipul Chettri inspiration"
+  },
+    {
+    id: 37,
+    link: "https://youtube.com/shorts/soQ4UEoXzic?si=Q5ji2Ly-wIz2DYCV",
+    thumbnail: "https://img.youtube.com/vi/soQ4UEoXzic/hqdefault.jpg",
+    category: ["Featured Videos"],
+    title: "When prachanda created fake moist"
+  },
+    {
+    id: 36,
+    link: "https://www.instagram.com/reel/DONTH8DEy92/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    thumbnail: images.reel5,
+    category: ["Featured Videos"],
+  },
+
 ];
+
